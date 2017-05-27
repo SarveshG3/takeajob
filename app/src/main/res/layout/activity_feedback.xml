@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sarvesh.takeajob.FeedbackActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.29"
+        android:gravity="center"
+        android:text="We Value Your Feedback"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:inputType="textMultiLine"
+        android:hint="Pass your thoughts"
+        android:gravity="top"
+        android:id="@+id/feedback"
+        android:padding="7dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_light"
+        android:layout_weight="0.05"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:background="#c62828"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+</LinearLayout>

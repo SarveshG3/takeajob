@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="awesome-validation-2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/92ab89d8a79f001ae7232e6a5865b1f1b7d4b56e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/92ab89d8a79f001ae7232e6a5865b1f1b7d4b56e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.basgeekball/awesome-validation/2.0/7fe5e2c96c9018eefc7caaffed1d4f5e3fe93bb8/awesome-validation-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

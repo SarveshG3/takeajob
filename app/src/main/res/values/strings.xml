@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">takeajob</string>
+    <string-array name="drawer_content">
+        <item>Job Feed</item>
+        <item>Profile</item>
+        <item>Applied Jobs</item>
+        <item>Saved Jobs</item>
+        <item>Notifications</item>
+        <item>Feedback</item>
+        <item>Our Collaborations</item>
+        <item>About Us</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="drawer_content_image">
+        <item>&#xf09e;</item>
+        <item>&#xf007;</item>
+        <item>&#xf0a6;</item>
+        <item>&#xf019;</item>
+        <item>&#xf0f3;</item>
+        <item>&#xf27a;</item>
+        <item>&#xf2b5;</item>
+        <item>&#xf0c0;</item>
+        <item>&#xf011;</item>
+    </string-array>
+    <string-array name="skill_content">
+        <item>Skill</item>
+        <item>Finance</item>
+        <item>Software Development</item>
+        <item>Banking</item>
+        <item>Management</item>
+        <item>IT</item>
+        <item>CA</item>
+        <item>Web Designing</item>
+        <item>Data Entry</item>
+        <item>Content Writing</item>
+    </string-array>
+
+    <string name="icon_signal">&#xf012;</string>
+    <string name="icon_certificate">&#xf0a3;</string>
+    <string name="icon_globe">&#xf0ac;</string>
+    <string name="icon_power">&#xf011;</string>
+    <string name="icon_heart">&#xf004;</string>
+    <string name="icon_brief">&#xf0f2;</string>
+    <string name="icon_leaf">&#xf06c;</string>
+    <string name="icon_certi">&#xf0a3;</string>
+    <string name="icon_hard_work">&#xf0ad;</string>
+    <string name="icon_grad_cap">&#xf19d;</string>
+    <string name="icon_building">&#xf1ad;</string>
+    <string name="icon_feedback">&#xf27a;</string>
+    <string name="icon_age">&#xf170;</string>
+    <string name="icon_contact">&#xf095;</string>
+
+    <string-array name="location_content">
+        <item>Location</item>
+        <item>Banglore</item>
+        <item>Chandigarh</item>
+        <item>Chennai</item>
+        <item>Delhi</item>
+        <item>Lucknow</item>
+        <item>Mumbai</item>
+        <item>Noida</item>
+        <item>Gurugram</item>
+        <item>Pune</item>
+    </string-array>
+
+    <string-array name="experience_content">
+        <item>Experience (Years)</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string name="drawer_open">Drawer Is Open</string>
+    <string name="drawer_close">Drawer Is Closed</string>
+
+    <string name="already_applied">Your Application is Under Process</string>
+
+    <string name="usernameerror">Enter a valid Username</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="passworderror">Should contain atleast one digit and one alpha numeric character</string>
+    <string name="confirmpassworderror">Passwords do not match</string>
+
+    <string name="nameerror">Is that your name?</string>
+    <string name="ageerror">You don\'t seem to be that old</string>
+    <string name="contacterror">I will be calling you seriously</string>
+    <string name="designationerror">Really?</string>
+    <string name="companyerror">Is that where you work?</string>
+    <string name="salaryerror">You really earn a lot</string>
+    <string name="experienceerror">Really are u that experienced</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/filter"
+    android:icon="@drawable/ic_action_search"
+    android:title="Search Jobs"
+    app:showAsAction="always">
+   <!-- <menu>
+        <item android:id="@+id/skill"
+            android:title="Skill" />
+
+        <item android:id="@+id/location"
+            android:title="Location" />
+
+        <item android:id="@+id/exp"
+            android:title="Experience" />
+    </menu>
+    -->
+</item>
+    <item
+        android:id="@+id/save"
+        android:title="Save Job"
+        app:showAsAction="always"
+        android:visible="false">
+
+    </item>
+
+</menu>

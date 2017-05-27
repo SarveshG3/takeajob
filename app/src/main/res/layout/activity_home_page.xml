@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context="com.example.sarvesh.takeajob.HomePage">
+    <!--main content view-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_frame"
+        >
+    </FrameLayout>
+    <!--Navigation Drawer-->
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:weightSum="3"
+        android:id="@+id/linear_layout1">
+        <include layout="@layout/drawer_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            />
+       <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/drawer_image"
+            android:layout_weight="1"/>
+            -->
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="0dp"
+            android:layout_gravity="start"
+            android:layout_weight="2"
+            android:scrollbars="none"
+            android:textAlignment="textStart"
+            android:divider="@android:color/transparent"
+            android:background="@android:color/background_light"
+            />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
