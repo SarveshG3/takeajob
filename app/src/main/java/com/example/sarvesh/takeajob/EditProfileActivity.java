@@ -105,7 +105,7 @@ public class EditProfileActivity extends AppCompatActivity {
         awesomeValidation.addValidation(this,R.id.designation,"(-?([A-Z][a-z].\\s)?([A-Z][a-z]+)\\s?)+([A-Z]'([A-Z][a-z]+))?",R.string.designationerror);
         awesomeValidation.addValidation(this,R.id.companyName,"(-?([A-Z][a-z].\\s)?([A-Z][a-z]+)\\s?)+([A-Z]'([A-Z][a-z]+))?",R.string.companyerror);
         awesomeValidation.addValidation(this,R.id.experience,"^[0-9]{1,2}$",R.string.experienceerror);
-        awesomeValidation.addValidation(this,R.id.currentSal,"^[0-9]{3,10}$",R.string.salaryerror);
+        awesomeValidation.addValidation(this,R.id.currentSal,"^[0-9]{1,10}$",R.string.salaryerror);
 
         browse= (Button) findViewById(R.id.browse);
         upload= (Button) findViewById(R.id.upload_resume);

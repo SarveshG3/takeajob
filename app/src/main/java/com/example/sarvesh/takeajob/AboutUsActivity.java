@@ -3,12 +3,16 @@ package com.example.sarvesh.takeajob;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AboutUsActivity extends AppCompatActivity {
 
     TextView tv1,tv2,tv3,tv4,tv5,tv6,tv7,tv8;
     Typeface font;
+    Button subscribe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,5 +40,12 @@ public class AboutUsActivity extends AppCompatActivity {
         tv8= (TextView) findViewById(R.id.hard_work);
         tv8.setTypeface(font);
 
+        subscribe= (Button) findViewById(R.id.subscribe);
+        subscribe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(AboutUsActivity.this,"Thanks for subscribing to our mailing list",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

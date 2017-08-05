@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="E:\Android\My Projects\TakeAJob\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c976efa09d85cfc8611b2bc58b3bb0afdf404172">
-        <dex dex="E:\Android\My Projects\TakeAJob\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2ff5ecde2fbd72db2f31d1466633930ec1d63462\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\Android\My Projects\TakeAJob\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
         <dex dex="E:\Android\My Projects\TakeAJob\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b232fc14a88e0a4dd1cc22a9f9121756c8c5c091\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\My Projects\TakeAJob\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c976efa09d85cfc8611b2bc58b3bb0afdf404172">
+        <dex dex="E:\Android\My Projects\TakeAJob\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2ff5ecde2fbd72db2f31d1466633930ec1d63462\classes.dex" />
     </item>
 
 </items>

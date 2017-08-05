@@ -3,6 +3,8 @@ package com.example.sarvesh.takeajob;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -22,6 +24,10 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -47,6 +53,33 @@ public class HomePage extends AppCompatActivity implements FilterFragment.Commun
         t.add(R.id.content_frame,jfrag,"jobfrag");
         t.commit();
         jfrag.setCommunicator(this);
+    }
+
+    @Override
+    protected void onResume() {
+
+        super.onResume();
+        String imgPath=getSharedPreferences("takeajobdata",MODE_PRIVATE).getString("pathtoimage",null);
+        if(imgPath!=null) {
+            loadImageFromStorage(imgPath);
+        }
+        String username=getSharedPreferences("takeajobdata", MODE_PRIVATE).getString("username",null);
+        tv1.setText(username);
+        String email=getSharedPreferences("takeajobdata", MODE_PRIVATE).getString("email",null);
+        tv2.setText(email);
+    }
+    private void loadImageFromStorage(String path)
+    {
+
+        try {
+            File f=new File(path, "profile.jpg");
+            Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
+            circleImageView.setImageBitmap(b);
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -116,7 +149,13 @@ public class HomePage extends AppCompatActivity implements FilterFragment.Commun
         // Set the drawer toggle as the DrawerListener
         //(SELF)failing to set this listner will result in drawer not notifying the action bar home icon to change on toggle and the three stripped icon will not change.
         drawerLayout.addDrawerListener(mDrawerToggle);
-
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(HomePage.this,ProfileActivity.class);
+                startActivity(i);
+            }
+        });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);      //(SELF)it enables the icon before the actionbar title if nt set true will not show any arrow icon for Options menu.
         getSupportActionBar().setHomeButtonEnabled(true);              //don't know wy use this--not making any diference in this case.
         generateFrag();
@@ -283,16 +322,11 @@ public class HomePage extends AppCompatActivity implements FilterFragment.Commun
                         startActivity(intent);
                         break;}
                 case 6:{
-                        Intent intent=new Intent(HomePage.this,CollaborationsActivity.class);
-                        intent.putExtra("title",title);
-                        startActivity(intent);
-                        break;}
-                case 7:{
                         Intent intent=new Intent(HomePage.this,AboutUsActivity.class);
                         intent.putExtra("title",title);
                         startActivity(intent);
                         break;}
-                case 8:{
+                case 7:{
                         SharedPreferences preferences=getSharedPreferences("takeajobdata",MODE_PRIVATE);
                         preferences.edit().putInt("loginId",0).apply();
                         tv1.setText("");

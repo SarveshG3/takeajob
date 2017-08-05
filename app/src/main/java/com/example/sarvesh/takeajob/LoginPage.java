@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -38,6 +39,8 @@ public class LoginPage extends AppCompatActivity {
         font = Typeface.createFromAsset( getAssets(), "fontawesome-webfont.ttf" );
         awesomeValidation=new AwesomeValidation(ValidationStyle.BASIC);
 
+        TextView forgot_pass= (TextView) findViewById(R.id.textView);
+        forgot_pass.setVisibility(View.INVISIBLE);
        // Button button = (Button)findViewById( R.id.button );
         //button.setTypeface(font);
      /*   getSupportActionBar().setDisplayHomeAsUpEnabled(true);

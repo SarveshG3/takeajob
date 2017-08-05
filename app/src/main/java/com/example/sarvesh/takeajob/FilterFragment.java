@@ -153,8 +153,6 @@ public class FilterFragment extends DialogFragment{
         int width = display.getWidth();
         int height=display.getHeight();
 
-        //Log.v("width", width+"");
-        getDialog().getWindow().setLayout(width,4*(height/5));
     }
 
     public interface Communicator{
