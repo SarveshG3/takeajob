@@ -21,13 +21,14 @@ class ServerCon {
 
      static String uploadData(RequestPackage rp)
     {
-        Log.d("SERVERCON","In ServerCon.uploadData currently");
+        //Log.d("SERVERCON","In ServerCon.uploadData currently");
         URL url;
         BufferedReader reader=null;
         HttpURLConnection urlConnection=null;
         OutputStreamWriter writer=null;
         String uri=rp.getUri();
-        try {Log.d("SERVERCON","try block entry");
+        try {
+            //Log.d("SERVERCON","try block entry");
             url = new URL(uri);
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod(rp.getMethod());
@@ -45,15 +46,15 @@ class ServerCon {
                 //String params="params="+object.toString();
                 // Log.d("SERVER",object.toString());
 
-                Log.d("SERVERCON","POST method 1");
+                //Log.d("SERVERCON","POST method 1");
                 OutputStream out_stream=urlConnection.getOutputStream();
-                Log.d("SERVERCON","POST method 2");
+                //Log.d("SERVERCON","POST method 2");
                 writer=new OutputStreamWriter(out_stream);
                 // writer.write(object.toString());
-                Log.d("SERVERCON","POST method 3");
+                //Log.d("SERVERCON","POST method 3");
 
                 writer.write(rp.getEncodedParams());//it gets the encoded params exactly as GET request
-                Log.d("SERVERCON","POST method 4");
+                //Log.d("SERVERCON","POST method 4");
                 writer.flush();
                 out_stream.close();
 

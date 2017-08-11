@@ -156,10 +156,9 @@ public class HomePage extends AppCompatActivity implements FilterFragment.Commun
                 startActivity(i);
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);      //(SELF)it enables the icon before the actionbar title if nt set true will not show any arrow icon for Options menu.
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);      //(SELF)it enables the icon before the actionbar title if not set true will not show any arrow icon for Options menu.
         getSupportActionBar().setHomeButtonEnabled(true);              //don't know wy use this--not making any diference in this case.
         generateFrag();
-
     }
 
     @Override
